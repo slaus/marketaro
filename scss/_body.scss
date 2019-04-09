@@ -1,0 +1,192 @@
+/*!
+ * Body content
+ */
+body {
+  color: $dark-blue;
+  font-family: $font-opensans-light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background: $white;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+  font-family: $font-opensans-bold;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 74px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+h4 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+/* error if tags without attr */
+//img:not([alt]),
+//label:not([for]),
+//input[type=submit]:not([value]) {
+//  outline:1px dotted red;
+//}
+
+/* error if first child not used  */
+//ul > *:not(li),
+//ol > *:not(li),
+//dl > *:not(dt):not(dd) {
+//  outline:1px dotted red;
+//}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $yellow;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  border-radius: 10px !important;
+  border: none !important;
+  transition: all .5s;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.corner-1 {
+  position: absolute;
+  width: 100%;
+  height: 93px;
+  background: url("../images/corner-1.png") bottom center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  bottom: -92px;
+  left: 0;
+  z-index: 0;
+}
+
+.corner-2 {
+  position: absolute;
+  width: 100%;
+  height: 93px;
+  background: url("../images/corner-2.png") top center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: -92px;
+  left: 0;
+  z-index: 0;
+}
+
+input:focus, textarea, a, button {
+  outline: none !important;
+  //-webkit-appearance: none !important; //Radiobutton disappears
+}
+
+.clearfix {
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+#back-to-top {
+  color: $white;
+  width: 50px;
+  height: 50px;
+  background-color: $blue;
+  text-transform: uppercase;
+  font-family: $font-opensans-bold;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+
+  &:hover {
+    background: $blue;
+    text-decoration: none;
+  }
+}
+
+.panel {
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  margin-top: 50%;
+
+  .btn-label {
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0,0,0,0.15);
+  }
+  .btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+}
+.corner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  &::before {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 50px 550px 0 550px;
+    border-color: $white transparent transparent transparent;
+    line-height: 0;
+    _border-color: #ffffff #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  }
+}

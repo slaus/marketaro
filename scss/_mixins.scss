@@ -1,0 +1,38 @@
+@mixin font-face($name, $filename, $style, $weight) {
+  $folder: '../fonts/';
+  $filepath: $folder + $filename;
+  @font-face {
+    font-family: "#{$name}";
+    font-style: $style;
+    font-weight: $weight;
+
+    src: url($filepath + ".eot");
+    src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
+    url($filepath + ".woff") format('woff'),
+    url($filepath + ".ttf")  format('truetype'),
+    url($filepath + ".svg#" + $name + "") format('svg');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@include font-face('OpenSans-Light', 'OpenSans-Light', 'normal', '100');
+@include font-face('OpenSans-Bold', 'OpenSans-Bold', 'normal', '700');
+@include font-face('Glyphicons Halflings', 'glyphicons-halflings-regular', 'normal', '300');
+@include font-face('Font Awesome', 'fontawesome-webfont', 'normal', '300');
+
+$font-opensans-light: 'OpenSans-Light';
+$font-opensans-bold: 'OpenSans-Bold';
+$font-icon: 'Glyphicons Halflings';
+$font-awesome: 'Font Awesome';
+
+$blue: #4699ec !default;
+$dark-blue: #274869 !default;
+$light-blue: #c8e2f8 !default;
+$yellow: #ffa800 !default;
+$white: #fff !default;
+$grey: #263746 !default;
+$light-grey: #9c9c9c !default;
+$dark-grey: #161616 !default;
+$green: #01ca6a !default;
+$black: #000 !default;

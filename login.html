@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="MARKETERO">
+
+    <title>MARKETERO.COM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/members.css">
+    <!--endbuild-->
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default auth-bg">
+                    <form role="form" id="login">
+                        <div class="panel-body">
+                            <div class="col-xs-4">
+                                <div class="logo"></div>
+                            </div>
+                            <div class="col-xs-8"></div>
+                            <div class="col-xs-12">
+                                <h1>Sign In</h1>
+                                <h2>Please enter your login and password.</h2>
+                                <div style="cursor: pointer; display: none;" class="alert alert-danger"
+                                     id="error-incorrect-data">
+                                    Incorrect E-mail or Password!
+                                </div>
+                                <div class="input-group">
+                                    <input id="username" type="text" class="form-control" name="username" value=""
+                                           placeholder="Username">
+                                    <input id="password" type="password" class="form-control" name="password"
+                                           placeholder="Password">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn submit">Sign In</button>
+                                </div>
+                                <div>
+                                    <p><a href="">Register</a> | <a href="">Forgot password</a></p>
+                                    <p><i class="glyphicon glyphicon-lock"></i> Your information is secure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

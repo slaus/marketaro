@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="MARKETERO">
+
+    <title>MARKETARO.COM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+
+    <!--build:css css/admin.min.css-->
+    <link rel="stylesheet" href="css/admin.css">
+    <!--endbuild-->
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default auth-bg">
+                    <form role="form" id="step-2">
+                        <div class="panel-body">
+                            <div class="col-xs-4">
+                                <div class="logo"></div>
+                            </div>
+                            <div class="col-xs-12">
+                                <h1>About you</h1>
+                                <h2>Please complete the following fields.</h2>
+                                <div class="input-group step-2">
+                                    <div class="col-xs-6 no-padding-left">
+                                        <label for="first-name" class="warning">First Name</label>
+                                        <input id="first-name" type="text" class="form-control" name="first-name" value=""
+                                               placeholder="Alex">
+                                    </div>
+                                    <div class="col-xs-6 no-padding-right">
+                                        <label for="last-name" class="warning">Last Name</label>
+                                        <input id="last-name" type="text" class="form-control no-margin-right" name="last-name"
+                                               placeholder="Mardikian">
+                                    </div>
+                                    <div class="col-xs-6 no-padding-left">
+                                        <label for="company" class="warning">Company Name</label>
+                                        <input id="company" type="text" class="form-control" name="company"
+                                               placeholder="Massrooots">
+                                    </div>
+                                    <div class="col-xs-6 no-padding-right">
+                                        <label for="phone">Phone Number</label>
+                                        <input id="phone" type="text" class="form-control" name="phone"
+                                               placeholder="6024890455">
+                                    </div>
+                                    <div class="col-xs-12 no-padding-left no-padding-right">
+                                        <label for="site" class="warning">Company Website</label>
+                                        <input id="site" type="site" class="form-control full-size" name="site"
+                                               placeholder="www.Massroots.com">
+                                    </div>
+                                    <div class="col-xs-12 no-padding-left no-padding-right">
+                                        <label class="warning big-font">What is your role?</label>
+                                        <div class="radio">
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="role-1" type="radio" name="role"> <label for="role-1"><span>Developer</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="role-2" type="radio" name="role"> <label for="role-2"><span>SEO</span></label>
+                                            </div>
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="role-3" type="radio" name="role"> <label for="role-3"><span>Marketer</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="role-4" type="radio" name="role" checked> <label for="role-4"><span>Other</span></label>
+                                            </div>
+                                        </div>​
+                                    </div>
+                                    <div class="col-xs-12 no-padding-left no-padding-right">
+                                        <label class="big-font">How do you plan to send email?</label>
+                                        <div class="checkbox">
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="plan-1" type="checkbox" name="plan-1"> <label for="plan-1"><span>Using Our API</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="plan-2" type="checkbox" name="plan-2" checked> <label for="plan-2"><span>Using Marketing Campaigns</span></label>
+                                            </div>
+                                        </div>​
+                                    </div>
+                                    <div class="col-xs-12 no-padding-left no-padding-right">
+                                        <label class="warning big-font">How many emails do you send per month?</label>
+                                        <div class="radio">
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="emails-1" type="radio" name="emails" checked> <label for="emails-1"><span>1-1.000.000</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="emails-2" type="radio" name="emails"> <label for="emails-2"><span>2.500.001-10.000.000</span></label>
+                                            </div>
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="emails-3" type="radio" name="emails"> <label for="emails-3"><span>1.000.001-2.500.000</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="emails-4" type="radio" name="emails"> <label for="emails-4"><span>10.000.000+</span></label>
+                                            </div>
+                                        </div>​
+                                    </div>
+                                    <div class="col-xs-12 no-padding-left no-padding-right">
+                                        <label class="warning big-font">How many employees work at your company?</label>
+                                        <div class="radio">
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="many-1" type="radio" name="many" checked> <label for="many-1"><span>1-500</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="many-2" type="radio" name="many"> <label for="many-2"><span>1.001-5.000</span></label>
+                                            </div>
+                                            <div class="col-xs-6 no-padding-left">
+                                                <input id="many-3" type="radio" name="many"> <label for="many-3"><span>501-1.000</span></label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="many-4" type="radio" name="many"> <label for="many-4"><span>5.000+</span></label>
+                                            </div>
+                                        </div>​
+                                    </div>
+                                </div>
+                                <div class="captcha text-center">
+                                    <button type="submit" class="btn submit">Save</button>
+                                </div>
+                                <div>
+                                    <p><i class="glyphicon glyphicon-lock"></i> Your information is secure.</p>
+                                </div>
+                                <div class="info">
+                                    <ul class="block-info">
+                                        <li><i>1</i><span>Account</span></li>
+                                        <li><i>2</i><span>Billing</span></li>
+                                        <li class="active"><i>3</i><span>Profile</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

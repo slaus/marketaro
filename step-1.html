@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="MARKETERO">
+
+    <title>MARKETERO.COM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+
+    <!--build:css css/admin.min.css-->
+    <link rel="stylesheet" href="css/admin.css">
+    <!--endbuild-->
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default auth-bg">
+                    <form role="form" id="login">
+                        <div class="panel-body">
+                            <div class="col-xs-4">
+                                <div class="logo"></div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                                <!--<div class="dropdown">-->
+                                    <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Essentials 40K $9.95 / mo-->
+                                        <!--<span class="caret"></span></button>-->
+                                    <!--<ul class="dropdown-menu">-->
+                                        <!--<li><a href="">Essentials 40K $9.95 / mo</a></li>-->
+                                        <!--<li><a href="">Essentials 50K $19.95 / mo</a></li>-->
+                                        <!--<li><a href="">Essentials 150K $57.45 / mo</a></li>-->
+                                        <!--<li><a href="">Essentials 150K $57.45 / mo</a></li>-->
+                                        <!--<li><a href="">Essentials 200K $94.95 / mo</a></li>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                                <select class="btn btn-primary dropdown-toggle selectpicker">
+                                    <option>Essentials 40K $9.95 / mo</option>
+                                    <option>Essentials 50K $19.95 / mo</option>
+                                    <option>Essentials 150K $57.45 / mo</option>
+                                    <option>Essentials 150K $57.45 / mo</option>
+                                    <option>Essentials 200K $94.95 / mo</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12">
+                                <h1>New Account</h1>
+                                <h2>Please review your plan and complete all fields.</h2>
+                                <div class="input-group">
+                                    <input id="username" type="text" class="form-control" name="username" value=""
+                                           placeholder="Username">
+                                    <input id="password" type="password" class="form-control" name="password"
+                                           placeholder="Password">
+                                    <label for="password">Must contain at least 8 characters, including at least 1 letter and number.</label>
+                                    <input id="re-password" type="password" class="form-control" name="re-password"
+                                           placeholder="Confirm password">
+                                    <input id="email" type="email" class="form-control" name="email"
+                                           placeholder="Email Address">
+                                    <label for="password">Make sure you use an email you can access.</label>
+                                </div>
+                                <div class="captcha text-center">
+                                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn submit">Continue</button>
+                                </div>
+                                <div>
+                                    <p>By creating an account, you are agreeing to our <a href="">Terms of Service</a></p>
+                                    <p><i class="glyphicon glyphicon-lock"></i> Your information is secure.</p>
+                                </div>
+                                <div class="info">
+                                    <ul class="block-info">
+                                        <li class="active"><i>1</i><span>Account</span></li>
+                                        <li><i>2</i><span>Billing</span></li>
+                                        <li><i>3</i><span>Profile</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

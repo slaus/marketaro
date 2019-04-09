@@ -1,0 +1,72 @@
+/*!
+ * Footer content
+ */
+footer,
+.footer {
+
+  & .btn-warning {
+    padding: 10px 12px;
+    font-size: 20px;
+  }
+
+  background-color: $dark-grey;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: $light-grey;
+
+  & .row {
+    padding: 10px 0;
+  }
+
+  & .footer-info {
+    position: relative;
+    padding-left: 70px;
+
+    & img {
+      position: absolute;
+      left: 10px;
+      top: 0;
+    }
+
+    & h4 {
+      color: $light-grey;
+      font-size: 18px;
+      margin: 0;
+
+      & ~ p a {
+        color: $light-grey;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  & .align {
+    text-align: right;
+
+    @media screen and (max-width: 991px) {
+      text-align: left;
+      padding-left: 70px;
+    }
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  & a {
+    color: $yellow;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px dotted $yellow;
+    }
+  }
+  & button {
+    background-color: $yellow;
+    margin-top: 10px;
+  }
+}
